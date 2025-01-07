@@ -1,6 +1,5 @@
 package exercise;
 
-import java.util.HashMap;
 import java.util.stream.Collectors;
 import java.util.Map;
 
@@ -9,7 +8,7 @@ class Tag {
     private String tag;
     private Map<String, String> attributes;
 
-    public Tag(String tag, Map<String, String> attributes) {
+    Tag(String tag, Map<String, String> attributes) {
         this.tag = tag;
         this.attributes = attributes;
     }

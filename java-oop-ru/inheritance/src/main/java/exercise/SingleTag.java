@@ -7,7 +7,7 @@ class SingleTag extends Tag {
     private String tag;
     private Map<String, String> attributes;
 
-    public SingleTag(String tag, Map<String, String> attributes) {
+    SingleTag(String tag, Map<String, String> attributes) {
         super(tag, attributes);
     }
 
