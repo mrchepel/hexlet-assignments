@@ -38,11 +38,3 @@ class FileKV implements KeyValueStorage {
     }
 }
 // END
-
-class Test {
-    public static void main(String[] args) {
-        KeyValueStorage storage = new FileKV("src/test/resources/file", Map.of("key", "value"));
-        // Получение значения по ключу
-        System.out.println(storage.get("key", "default")); // "value"
-    }
-}
