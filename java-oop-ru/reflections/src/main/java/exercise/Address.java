@@ -1,9 +1,6 @@
 package exercise;
 
 
-import java.util.List;
-import java.util.Map;
-
 class Address {
     // BEGIN
     @NotNull

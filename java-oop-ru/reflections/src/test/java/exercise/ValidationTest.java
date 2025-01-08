@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -36,7 +35,8 @@ class ValidationTest {
     void testAdvancedValidate() {
         Address address = new Address("USA", "Texas", null, "7", "2");
         Map<String, List<String>> result = Validator.advancedValidate(address);
-        Map<String, List<String>> expected = Map.of("country", List.of("length less than 4"), "street", List.of("can not be null"));
+        Map<String, List<String>> expected =
+                Map.of("country", List.of("length less than 4"), "street", List.of("can not be null"));
         assertThat(result).isEqualTo(expected);
     }
     // END
