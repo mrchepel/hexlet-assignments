@@ -25,7 +25,8 @@ class Car {
 
     public static Car deserialize(String json) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        return mapper.readValue(json, new TypeReference<Car>() {});
+        return mapper.readValue(json, new TypeReference<Car>() {
+        });
     }
     // END
 }
